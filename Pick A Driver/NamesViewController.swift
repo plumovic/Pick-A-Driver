@@ -55,7 +55,7 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
     {
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
-            self.names.remove(at: self.names.count)
+            self.names.remove(at: indexPath.row)
             tableView.reloadData()
         }
         return [delete]
