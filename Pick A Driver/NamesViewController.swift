@@ -12,33 +12,49 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
 {
     @IBOutlet weak var tableView: UITableView!
     
+    let defaults = UserDefaults.standard
+    
     var period = String()
-    var names = [String]()
+    var names = [String()]
+    {
+        didSet
+        {
+            defaults.set(names, forKey: period)
+        }
+    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
-        tableView.isEditing = true
         
-        loadTestNames()
+        
+        tableView.isEditing = true
+        if let savedData = defaults.object(forKey: period) as? [String]
+        {
+            names = savedData
+        }
+//        else
+//        {
+//            loadTestNames()
+//        }
         navigationItem.title = period
     }
 
-    func loadTestNames()
-    {
-        switch period
-        {
-        case "1st Period":
-            names = ["Petar", "George", "John", "Quinn", "Leah"]
-        case "2nd Period":
-            names = ["Will", "Mary", "Brendon", "Jim", "Yo", "Tim"]
-        case "3rd Period":
-            names = ["Jan", "Mam", "Tori", "Amer", "Sam"]
-        default:
-            names = ["Sue", "Gertrude", "Hilda", "Torgnee", "Sigbar"]
-        }
-    }
+//    func loadTestNames()
+//    {
+//        switch period
+//        {
+//        case "1st Period":
+//            names = ["Petar", "George", "John", "Quinn", "Leah"]
+//        case "2nd Period":
+//            names = ["Will", "Mary", "Brendon", "Jim", "Yo", "Tim"]
+//        case "3rd Period":
+//            names = ["Jan", "Mam", "Tori", "Amer", "Sam"]
+//        default:
+//            names = ["Sue", "Gertrude", "Hilda", "Torgnee", "Sigbar"]
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
