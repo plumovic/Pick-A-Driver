@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E08B95CA2045D6ED00A5C6FB /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08B95C92045D6ED00A5C6FB /* DisplayViewController.swift */; };
 		E0C36ACC202A255A00AA7BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C36ACB202A255A00AA7BA1 /* AppDelegate.swift */; };
 		E0C36ACE202A255A00AA7BA1 /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C36ACD202A255A00AA7BA1 /* NamesViewController.swift */; };
 		E0C36AD1202A255A00AA7BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C36ACF202A255A00AA7BA1 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E08B95C92045D6ED00A5C6FB /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		E0C36AC8202A255900AA7BA1 /* Pick A Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pick A Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C36ACB202A255A00AA7BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C36ACD202A255A00AA7BA1 /* NamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				E0C36ACB202A255A00AA7BA1 /* AppDelegate.swift */,
 				E0C36AFD202CD07C00AA7BA1 /* PeriodViewController.swift */,
 				E0C36ACD202A255A00AA7BA1 /* NamesViewController.swift */,
+				E08B95C92045D6ED00A5C6FB /* DisplayViewController.swift */,
 				E0C36ACF202A255A00AA7BA1 /* Main.storyboard */,
 				E0C36AD2202A255A00AA7BA1 /* Assets.xcassets */,
 				E0C36AD4202A255A00AA7BA1 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				E0C36AFE202CD07C00AA7BA1 /* PeriodViewController.swift in Sources */,
 				E0C36ACE202A255A00AA7BA1 /* NamesViewController.swift in Sources */,
 				E0C36ACC202A255A00AA7BA1 /* AppDelegate.swift in Sources */,
+				E08B95CA2045D6ED00A5C6FB /* DisplayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
