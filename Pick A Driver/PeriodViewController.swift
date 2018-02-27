@@ -22,12 +22,12 @@ class PeriodViewController: UIViewController
     @IBAction func onPeriodButtonTapped(_ sender: UIButton)
     {
         period = (sender.titleLabel?.text)!
-        performSegue(withIdentifier: "PeriodToNameSegue", sender: nil)
+        performSegue(withIdentifier: "PeriodToDisplaySegue", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        let dvc = segue.destination as! NamesViewController
+        let dvc = segue.destination as! DisplayViewController
         dvc.period = period
     }
     
