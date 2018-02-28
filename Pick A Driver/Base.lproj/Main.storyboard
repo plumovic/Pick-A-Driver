@@ -590,9 +590,19 @@
                                     <constraint firstItem="8jp-2B-QRN" firstAttribute="baseline" secondItem="csG-EJ-0ua" secondAttribute="baseline" id="zRz-Us-h9s"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwY-Nj-92E">
+                                <rect key="frame" x="170" y="601" width="34" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="onStartButtonTapped:" destination="5Qc-KG-BmS" eventType="touchUpInside" id="gf8-oX-NzL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xwY-Nj-92E" firstAttribute="top" secondItem="rka-nx-CSU" secondAttribute="bottom" constant="18" id="SyZ-99-EXl"/>
+                            <constraint firstItem="xwY-Nj-92E" firstAttribute="centerX" secondItem="R0k-JV-FTX" secondAttribute="centerX" id="T49-Ij-4Kv"/>
                             <constraint firstItem="rka-nx-CSU" firstAttribute="centerX" secondItem="R0k-JV-FTX" secondAttribute="centerX" id="msc-yy-4rV"/>
                             <constraint firstItem="rka-nx-CSU" firstAttribute="centerY" secondItem="R0k-JV-FTX" secondAttribute="centerY" id="oxZ-yP-gaM"/>
                         </constraints>
@@ -606,6 +616,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="startButton" destination="xwY-Nj-92E" id="hsS-qm-ije"/>
                         <outletCollection property="nameLabels" destination="V2R-d2-10t" collectionClass="NSMutableArray" id="La2-ev-nD7"/>
                         <outletCollection property="nameLabels" destination="pJ5-zx-QNV" collectionClass="NSMutableArray" id="RcV-E3-tmv"/>
                         <outletCollection property="nameLabels" destination="Dsp-tI-jbU" collectionClass="NSMutableArray" id="1i4-9m-8sZ"/>
