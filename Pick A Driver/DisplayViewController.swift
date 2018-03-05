@@ -65,13 +65,16 @@ class DisplayViewController: UIViewController
             }
         }
         let randomPick = Int(arc4random_uniform(UInt32(nameLabelIndices.count)))
-        nameLabels[nameLabelIndices[randomPick]].text = ""
-        if nameLabelIndices.count <= 2
+        
+        if nameLabelIndices.count <= 1
         {
+            let pickedName = nameLabels[nameLabelIndices[0]].text
+            
             timer.invalidate()
             startButton.setTitle("Reset", for: .normal)
             startButton.backgroundColor = UIColor.yellow
         }
+        nameLabels[nameLabelIndices[randomPick]].text = ""
     }
     
     @IBAction func onStartButtonTapped(_ sender: UIButton)
