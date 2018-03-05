@@ -497,6 +497,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-iy-jTs">
+                                        <rect key="frame" x="0.0" y="200.5" width="300" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="JQM-hr-M2F"/>
+                                            <constraint firstAttribute="height" constant="100" id="n6l-iM-aSH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="x5L-qV-Xev" firstAttribute="leading" secondItem="WoS-Ke-uYQ" secondAttribute="leading" id="1FA-nH-7Mb"/>
@@ -504,6 +514,7 @@
                                     <constraint firstItem="pJ5-zx-QNV" firstAttribute="baseline" secondItem="Dsp-tI-jbU" secondAttribute="baseline" id="2KV-mX-Ffs"/>
                                     <constraint firstItem="V2R-d2-10t" firstAttribute="leading" secondItem="CHq-CD-sIF" secondAttribute="leading" id="31p-yf-5J7"/>
                                     <constraint firstItem="bIY-9K-pHp" firstAttribute="top" secondItem="RfW-UH-7l6" secondAttribute="bottom" constant="46" id="4pW-kK-Z7m"/>
+                                    <constraint firstItem="wmc-iy-jTs" firstAttribute="centerX" secondItem="rka-nx-CSU" secondAttribute="centerX" id="4uG-vr-u6f"/>
                                     <constraint firstItem="E1c-Qe-zQ5" firstAttribute="baseline" secondItem="x5L-qV-Xev" secondAttribute="baseline" id="5Gx-BW-EU4"/>
                                     <constraint firstItem="bNU-I4-Fac" firstAttribute="baseline" secondItem="5uD-EY-T6b" secondAttribute="baseline" id="5eF-YW-LpU"/>
                                     <constraint firstItem="84L-eJ-Uv4" firstAttribute="leading" secondItem="RfW-UH-7l6" secondAttribute="leading" id="7SX-aJ-Edw"/>
@@ -539,6 +550,7 @@
                                     <constraint firstItem="iew-G1-2qC" firstAttribute="top" secondItem="bIY-9K-pHp" secondAttribute="bottom" constant="47" id="bDL-Ed-2Af"/>
                                     <constraint firstItem="CHq-CD-sIF" firstAttribute="top" secondItem="rka-nx-CSU" secondAttribute="top" constant="47" id="ehX-df-OHg"/>
                                     <constraint firstItem="N1T-te-Tii" firstAttribute="baseline" secondItem="nDM-Fs-5uQ" secondAttribute="baseline" id="f2A-9E-Xcu"/>
+                                    <constraint firstItem="wmc-iy-jTs" firstAttribute="centerY" secondItem="rka-nx-CSU" secondAttribute="centerY" id="fAf-wb-gjq"/>
                                     <constraint firstAttribute="height" constant="500" id="gmy-5o-dvO"/>
                                     <constraint firstItem="pJ5-zx-QNV" firstAttribute="centerX" secondItem="rka-nx-CSU" secondAttribute="centerX" id="hH3-7O-KVh"/>
                                     <constraint firstAttribute="trailing" secondItem="Dsp-tI-jbU" secondAttribute="trailing" id="hQb-Ax-Wyh"/>
@@ -589,6 +601,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="finalPickLabel" destination="wmc-iy-jTs" id="WAy-G6-Yv6"/>
                         <outlet property="startButton" destination="xwY-Nj-92E" id="hsS-qm-ije"/>
                         <outletCollection property="nameLabels" destination="V2R-d2-10t" collectionClass="NSMutableArray" id="La2-ev-nD7"/>
                         <outletCollection property="nameLabels" destination="pJ5-zx-QNV" collectionClass="NSMutableArray" id="RcV-E3-tmv"/>

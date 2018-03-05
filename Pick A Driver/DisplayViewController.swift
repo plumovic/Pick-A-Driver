@@ -12,6 +12,7 @@ class DisplayViewController: UIViewController
 {
     @IBOutlet var nameLabels: [UILabel]!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var finalPickLabel: UILabel!
     
     var period = String()
     var names = [String]()
