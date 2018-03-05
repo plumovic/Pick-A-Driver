@@ -73,7 +73,7 @@ class DisplayViewController: UIViewController
             
             timer.invalidate()
             startButton.setTitle("Reset", for: .normal)
-            startButton.backgroundColor = UIColor.yellow
+            startButton.setTitleColor(UIColor.yellow, for: .normal)
         }
         nameLabels[nameLabelIndices[randomPick]].text = ""
     }
@@ -86,15 +86,15 @@ class DisplayViewController: UIViewController
         case "Start" :
             resetTimer()
             sender.setTitle("Stop", for: .normal)
-            sender.backgroundColor = UIColor.red
+            sender.setTitleColor(UIColor.red, for: .normal)
         case "Stop" :
             timer.invalidate()
             sender.setTitle("Reset", for: .normal)
-            sender.backgroundColor = UIColor.yellow
+            sender.setTitleColor(UIColor.yellow, for: .normal)
         default:
             updateDisplay()
             sender.setTitle("Start", for: .normal)
-            sender.backgroundColor = UIColor.green
+            sender.setTitleColor(UIColor.green, for: .normal)
             resetNames()
         }
         
