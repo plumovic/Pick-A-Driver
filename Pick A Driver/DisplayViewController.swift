@@ -40,6 +40,7 @@ class DisplayViewController: UIViewController
     
     func resetNames()
     {
+        finalPickLabel.text = ""
         for i in 0..<min(names.count, nameLabels.count)
         {
             nameLabels[i].text = names[i]
@@ -66,11 +67,10 @@ class DisplayViewController: UIViewController
             }
         }
         let randomPick = Int(arc4random_uniform(UInt32(nameLabelIndices.count)))
-        
         if nameLabelIndices.count <= 1
         {
             let pickedName = nameLabels[nameLabelIndices[0]].text
-            
+            finalPickLabel.text = pickedName
             timer.invalidate()
             startButton.setTitle("Reset", for: .normal)
             startButton.backgroundColor = UIColor.yellow
@@ -92,7 +92,6 @@ class DisplayViewController: UIViewController
             sender.setTitle("Reset", for: .normal)
             sender.backgroundColor = UIColor.yellow
         default:
-            updateDisplay()
             sender.setTitle("Start", for: .normal)
             sender.backgroundColor = UIColor.green
             resetNames()
