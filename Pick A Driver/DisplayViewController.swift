@@ -16,6 +16,13 @@ class DisplayViewController: UIViewController
     
     var period = String()
     var names = [String]()
+    {
+        didSet
+        {
+            defaults.set(names, forKey: period)
+        }
+        
+    }
     var timer = Timer()
     var cycle = Double()
     
@@ -71,6 +78,8 @@ class DisplayViewController: UIViewController
         {
             let pickedName = nameLabels[nameLabelIndices[0]].text
             finalPickLabel.text = pickedName
+            names.remove(at: names.index(of: pickedName!)!)
+            names.append(pickedName!)
             timer.invalidate()
             startButton.setTitle("Reset", for: .normal)
             startButton.setTitleColor(UIColor.yellow, for: .normal)
