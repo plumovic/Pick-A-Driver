@@ -95,7 +95,7 @@ class DisplayViewController: UIViewController
         {
             if nameLabel.frame.contains(sender.location(in: labelView))
             {
-                print("\(nameLabel.text!) was tapped")
+                nameLabel.textColor = UIColor.red
             }
         }
     }
