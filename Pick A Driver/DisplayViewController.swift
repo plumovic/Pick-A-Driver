@@ -107,7 +107,14 @@ class DisplayViewController: UIViewController
         {
             if nameLabel.frame.contains(sender.location(in: labelView))
             {
-                nameLabel.textColor = UIColor.red
+                if nameLabel.textColor == UIColor.black
+                {
+                    nameLabel.textColor = UIColor.red
+                }
+                else
+                {
+                    nameLabel.textColor = UIColor.black
+                }
             }
         }
     }
