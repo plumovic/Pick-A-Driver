@@ -54,6 +54,7 @@ class DisplayViewController: UIViewController
         for i in 0..<min(names.count, nameLabels.count)
         {
             nameLabels[i].text = names[i]
+            nameLabels[i].textColor = UIColor.black
         }
         cycle = 2.0
     }
@@ -63,6 +64,17 @@ class DisplayViewController: UIViewController
         cycle += 0.2
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: cycle, target: self, selector: #selector(updateDisplay), userInfo: nil, repeats: true)
+    }
+    
+    func removeGrayNames()
+    {
+        for nameLabel in nameLabels
+        {
+            if nameLabel.textColor == UIColor.red
+            {
+                nameLabel.text = ""
+            }
+        }
     }
     
     @objc func updateDisplay()
@@ -118,7 +130,7 @@ class DisplayViewController: UIViewController
             sender.setTitleColor(UIColor.green, for: .normal)
             resetNames()
         }
-        
+        removeGrayNames()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
