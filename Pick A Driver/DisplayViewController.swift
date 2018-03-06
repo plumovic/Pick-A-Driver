@@ -13,6 +13,9 @@ class DisplayViewController: UIViewController
     @IBOutlet var nameLabels: [UILabel]!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var finalPickLabel: UILabel!
+    @IBOutlet weak var labelView: UIView!
+    
+    
     
     var period = String()
     var names = [String]()
@@ -85,6 +88,16 @@ class DisplayViewController: UIViewController
             startButton.setTitleColor(UIColor.yellow, for: .normal)
         }
         nameLabels[nameLabelIndices[randomPick]].text = ""
+    }
+    @IBAction func onTappedNameLabel(_ sender: UITapGestureRecognizer)
+    {
+        for nameLabel in nameLabels
+        {
+            if nameLabel.frame.contains(sender.location(in: labelView))
+            {
+                print("\(nameLabel.text!) was tapped")
+            }
+        }
     }
     
     @IBAction func onStartButtonTapped(_ sender: UIButton)
