@@ -158,7 +158,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uOa-zM-JcD" id="2gh-ik-Pn3">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -592,6 +592,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="xwY-Nj-92E" firstAttribute="top" secondItem="rka-nx-CSU" secondAttribute="bottom" constant="18" id="SyZ-99-EXl"/>
                             <constraint firstItem="xwY-Nj-92E" firstAttribute="centerX" secondItem="R0k-JV-FTX" secondAttribute="centerX" id="T49-Ij-4Kv"/>
@@ -599,6 +600,9 @@
                             <constraint firstItem="rka-nx-CSU" firstAttribute="centerY" secondItem="R0k-JV-FTX" secondAttribute="centerY" id="oxZ-yP-gaM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qua-Rz-VLV"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vUo-dS-xHs" appends="YES" id="wOO-vp-Lup"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Gx4-gf-vgH">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="QVm-np-Hd6">
@@ -609,6 +613,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="finalPickLabel" destination="wmc-iy-jTs" id="WAy-G6-Yv6"/>
+                        <outlet property="labelView" destination="rka-nx-CSU" id="hep-wt-Cs4"/>
                         <outlet property="startButton" destination="xwY-Nj-92E" id="hsS-qm-ije"/>
                         <outletCollection property="nameLabels" destination="V2R-d2-10t" collectionClass="NSMutableArray" id="La2-ev-nD7"/>
                         <outletCollection property="nameLabels" destination="pJ5-zx-QNV" collectionClass="NSMutableArray" id="RcV-E3-tmv"/>
@@ -643,6 +648,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ww2-jC-acy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vUo-dS-xHs">
+                    <connections>
+                        <action selector="onTappedNameLabel:" destination="5Qc-KG-BmS" id="K62-Wo-h57"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="908" y="133.5832083958021"/>
         </scene>

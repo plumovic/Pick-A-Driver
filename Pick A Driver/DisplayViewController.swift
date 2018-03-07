@@ -13,6 +13,9 @@ class DisplayViewController: UIViewController
     @IBOutlet var nameLabels: [UILabel]!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var finalPickLabel: UILabel!
+    @IBOutlet weak var labelView: UIView!
+    
+    
     
     var period = String()
     var names = [String]()
@@ -51,6 +54,7 @@ class DisplayViewController: UIViewController
         for i in 0..<min(names.count, nameLabels.count)
         {
             nameLabels[i].text = names[i]
+            nameLabels[i].textColor = UIColor.black
         }
         cycle = 2.0
     }
@@ -60,6 +64,17 @@ class DisplayViewController: UIViewController
         cycle += 0.2
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: cycle, target: self, selector: #selector(updateDisplay), userInfo: nil, repeats: true)
+    }
+    
+    func removeGrayNames()
+    {
+        for nameLabel in nameLabels
+        {
+            if nameLabel.textColor == UIColor.red
+            {
+                nameLabel.text = ""
+            }
+        }
     }
     
     @objc func updateDisplay()
@@ -86,6 +101,23 @@ class DisplayViewController: UIViewController
         }
         nameLabels[nameLabelIndices[randomPick]].text = ""
     }
+    @IBAction func onTappedNameLabel(_ sender: UITapGestureRecognizer)
+    {
+        for nameLabel in nameLabels
+        {
+            if nameLabel.frame.contains(sender.location(in: labelView))
+            {
+                if nameLabel.textColor == UIColor.black
+                {
+                    nameLabel.textColor = UIColor.red
+                }
+                else
+                {
+                    nameLabel.textColor = UIColor.black
+                }
+            }
+        }
+    }
     
     @IBAction func onStartButtonTapped(_ sender: UIButton)
     {
@@ -105,7 +137,7 @@ class DisplayViewController: UIViewController
             sender.setTitleColor(UIColor.green, for: .normal)
             resetNames()
         }
-        
+        removeGrayNames()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
