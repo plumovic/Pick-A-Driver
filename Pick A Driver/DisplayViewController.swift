@@ -36,7 +36,7 @@ class DisplayViewController: UIViewController
         super.viewDidLoad()
 
         navigationItem.title = period
-        
+        navigationController?.navigationBar.barTintColor = UIColor.red
     }
     
     override func viewDidAppear(_ animated: Bool)
@@ -54,7 +54,7 @@ class DisplayViewController: UIViewController
         for i in 0..<min(names.count, nameLabels.count)
         {
             nameLabels[i].text = names[i]
-            nameLabels[i].textColor = UIColor.black
+            nameLabels[i].textColor = UIColor.white
         }
         cycle = 2.0
     }
@@ -107,13 +107,13 @@ class DisplayViewController: UIViewController
         {
             if nameLabel.frame.contains(sender.location(in: labelView))
             {
-                if nameLabel.textColor == UIColor.black
+                if nameLabel.textColor == UIColor.white
                 {
                     nameLabel.textColor = UIColor.red
                 }
                 else
                 {
-                    nameLabel.textColor = UIColor.black
+                    nameLabel.textColor = UIColor.white
                 }
             }
         }
