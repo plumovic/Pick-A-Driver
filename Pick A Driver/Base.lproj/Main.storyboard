@@ -611,7 +611,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwY-Nj-92E">
-                                <rect key="frame" x="161" y="617" width="52" height="38"/>
+                                <rect key="frame" x="161" y="604" width="52" height="38"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -624,7 +624,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="qua-Rz-VLV" firstAttribute="bottom" secondItem="xwY-Nj-92E" secondAttribute="bottom" constant="12" id="3ta-er-lBd"/>
+                            <constraint firstItem="qua-Rz-VLV" firstAttribute="bottom" secondItem="xwY-Nj-92E" secondAttribute="bottom" constant="25" id="3ta-er-lBd"/>
                             <constraint firstItem="xwY-Nj-92E" firstAttribute="centerX" secondItem="R0k-JV-FTX" secondAttribute="centerX" id="T49-Ij-4Kv"/>
                             <constraint firstItem="fqR-th-m2W" firstAttribute="leading" secondItem="R0k-JV-FTX" secondAttribute="leading" id="bQG-Ys-Heg"/>
                             <constraint firstItem="fqR-th-m2W" firstAttribute="top" secondItem="R0k-JV-FTX" secondAttribute="top" constant="64" id="gkc-nr-CNJ"/>
@@ -711,7 +711,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Chalkboard" width="188" height="124"/>
+        <image name="Chalkboard" width="240" height="380"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fmh-UU-aC5"/>
