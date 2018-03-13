@@ -17,6 +17,7 @@ class PeriodViewController: UIViewController
     {
         super.viewDidLoad()
 
+        navigationController?.navigationBar.barTintColor = UIColor.yellow
     }
 
     @IBAction func onPeriodButtonTapped(_ sender: UIButton)

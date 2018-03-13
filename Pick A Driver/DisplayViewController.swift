@@ -36,7 +36,7 @@ class DisplayViewController: UIViewController
         super.viewDidLoad()
 
         navigationItem.title = period
-        navigationController?.navigationBar.barTintColor = UIColor.red
+        navigationController?.navigationBar.barTintColor = UIColor.yellow
     }
     
     override func viewDidAppear(_ animated: Bool)

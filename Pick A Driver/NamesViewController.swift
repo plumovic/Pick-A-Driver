@@ -26,35 +26,16 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
         
+        navigationController?.navigationBar.barTintColor = UIColor.yellow
         
         tableView.isEditing = true
         if let savedData = defaults.object(forKey: period) as? [String]
         {
             names = savedData
         }
-//        else
-//        {
-//            loadTestNames()
-//        }
         navigationItem.title = period
     }
-
-//    func loadTestNames()
-//    {
-//        switch period
-//        {
-//        case "1st Period":
-//            names = ["Petar", "George", "John", "Quinn", "Leah"]
-//        case "2nd Period":
-//            names = ["Will", "Mary", "Brendon", "Jim", "Yo", "Tim"]
-//        case "3rd Period":
-//            names = ["Jan", "Mam", "Tori", "Amer", "Sam"]
-//        default:
-//            names = ["Sue", "Gertrude", "Hilda", "Torgnee", "Sigbar"]
-//        }
-//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
