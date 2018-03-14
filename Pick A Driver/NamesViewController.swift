@@ -66,13 +66,6 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tableView.reloadData()
     }
     
-    
-    @IBAction func onPeriodButtonTapped(_ sender: UIButton)
-    {
-        
-    }
-    
-    
     @IBAction func onAddButtonTapped(_ sender: Any)
     {
         let alert = UIAlertController(title: "Add a Name", message: nil, preferredStyle: .alert)
@@ -91,6 +84,5 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
         alert.addAction(insertAction)
         present(alert, animated: true, completion: nil)
     }
-    
 }
 

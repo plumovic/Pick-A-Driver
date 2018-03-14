@@ -88,18 +88,32 @@ class DisplayViewController: UIViewController
                 nameLabelIndices.append(i)
             }
         }
-        let randomPick = Int(arc4random_uniform(UInt32(nameLabelIndices.count)))
-        if nameLabelIndices.count <= 1
+        if nameLabelIndices.count == 0
         {
-            let pickedName = nameLabels[nameLabelIndices[0]].text
-            finalPickLabel.text = pickedName
-            names.remove(at: names.index(of: pickedName!)!)
-            names.append(pickedName!)
-            timer.invalidate()
-            startButton.setTitle("Reset", for: .normal)
-            startButton.setTitleColor(UIColor.yellow, for: .normal)
+            let alert = UIAlertController(title: "Please add a name before starting.", message: nil, preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alert.addAction(ok)
+            present(alert, animated: true, completion: {
+                self.timer.invalidate()
+                self.startButton.setTitle("Start", for: .normal)
+                self.startButton.setTitleColor(UIColor.green, for: .normal)
+            })
         }
-        nameLabels[nameLabelIndices[randomPick]].text = ""
+        else
+        {
+            let randomPick = Int(arc4random_uniform(UInt32(nameLabelIndices.count)))
+            if nameLabelIndices.count <= 1
+            {
+                let pickedName = nameLabels[nameLabelIndices[0]].text
+                finalPickLabel.text = pickedName
+                names.remove(at: names.index(of: pickedName!)!)
+                names.append(pickedName!)
+                timer.invalidate()
+                startButton.setTitle("Reset", for: .normal)
+                startButton.setTitleColor(UIColor.yellow, for: .normal)
+            }
+            nameLabels[nameLabelIndices[randomPick]].text = ""
+        }
     }
     @IBAction func onTappedNameLabel(_ sender: UITapGestureRecognizer)
     {
