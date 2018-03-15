@@ -27,9 +27,10 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GB-H2-bVG">
-                                <rect key="frame" x="110" y="121" width="155" height="50"/>
+                                <rect key="frame" x="90" y="94" width="195" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Xkg-3X-iVk"/>
+                                    <constraint firstAttribute="width" constant="195" id="vqm-CX-YzX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="1st Period">
@@ -41,9 +42,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99s-dH-xDQ">
-                                <rect key="frame" x="110" y="179" width="155" height="50"/>
+                                <rect key="frame" x="90" y="152" width="195" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XCE-4L-rWw"/>
+                                    <constraint firstAttribute="width" constant="195" id="k1u-Lf-dkv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="2nd Period">
@@ -54,9 +56,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2c-5s-cZ5">
-                                <rect key="frame" x="110" y="237" width="155" height="50"/>
+                                <rect key="frame" x="90" y="210" width="195" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="fPK-bV-HjE"/>
+                                    <constraint firstAttribute="width" constant="195" id="icc-uV-GkX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="3rd Period">
@@ -67,9 +70,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDW-0k-ThR">
-                                <rect key="frame" x="110" y="295" width="155" height="50"/>
+                                <rect key="frame" x="90" y="268" width="195" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3EB-sD-iOp"/>
+                                    <constraint firstAttribute="width" constant="195" id="ctA-3B-NfZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="4th Period">
@@ -80,9 +84,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYp-49-xsu">
-                                <rect key="frame" x="110" y="353" width="155" height="50"/>
+                                <rect key="frame" x="90" y="326" width="195" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9G2-fD-ul8"/>
+                                    <constraint firstAttribute="width" constant="195" id="JVP-bI-uOV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="5th Period">
@@ -93,9 +98,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZR-Ab-xVH">
-                                <rect key="frame" x="110" y="411" width="155" height="50"/>
+                                <rect key="frame" x="90" y="384" width="195" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ElJ-Tp-ufm"/>
+                                    <constraint firstAttribute="width" constant="195" id="H4B-nX-CIX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="6th Period">
@@ -106,8 +112,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8q-L7-wtA">
-                                <rect key="frame" x="110" y="469" width="155" height="50"/>
+                                <rect key="frame" x="90" y="442" width="195" height="50"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="6g3-71-UBf"/>
                                     <constraint firstAttribute="height" constant="50" id="yWL-vW-MYJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
@@ -119,7 +126,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xA-XW-wPs">
-                                <rect key="frame" x="110" y="527" width="155" height="43"/>
+                                <rect key="frame" x="90" y="500" width="195" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="VsE-8l-Wpq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="8th Period">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -139,11 +149,10 @@
                             <constraint firstAttribute="trailing" secondItem="Ev5-tU-iZV" secondAttribute="trailing" id="Ecj-lc-hE3"/>
                             <constraint firstItem="Ev5-tU-iZV" firstAttribute="bottom" secondItem="3p8-YR-Xvz" secondAttribute="bottom" id="F4t-yd-tP8"/>
                             <constraint firstItem="99s-dH-xDQ" firstAttribute="leading" secondItem="z2c-5s-cZ5" secondAttribute="leading" id="FET-65-Swr"/>
-                            <constraint firstItem="5GB-H2-bVG" firstAttribute="top" secondItem="3p8-YR-Xvz" secondAttribute="top" constant="57" id="Lfu-nf-RtR"/>
+                            <constraint firstItem="5GB-H2-bVG" firstAttribute="top" secondItem="3p8-YR-Xvz" secondAttribute="top" constant="30" id="Lfu-nf-RtR"/>
                             <constraint firstItem="hDW-0k-ThR" firstAttribute="leading" secondItem="mYp-49-xsu" secondAttribute="leading" id="Mxu-KB-4be"/>
                             <constraint firstItem="S8q-L7-wtA" firstAttribute="leading" secondItem="0xA-XW-wPs" secondAttribute="leading" id="QVT-in-u1n"/>
                             <constraint firstItem="S8q-L7-wtA" firstAttribute="top" secondItem="cZR-Ab-xVH" secondAttribute="bottom" constant="8" symbolic="YES" id="RiD-Hd-yDB"/>
-                            <constraint firstItem="5GB-H2-bVG" firstAttribute="leading" secondItem="3p8-YR-Xvz" secondAttribute="leading" constant="110" id="STK-DB-BHv"/>
                             <constraint firstItem="cZR-Ab-xVH" firstAttribute="leading" secondItem="S8q-L7-wtA" secondAttribute="leading" id="UD5-3h-aXn"/>
                             <constraint firstItem="5GB-H2-bVG" firstAttribute="trailing" secondItem="99s-dH-xDQ" secondAttribute="trailing" id="VTC-E1-NL9"/>
                             <constraint firstItem="mYp-49-xsu" firstAttribute="top" secondItem="hDW-0k-ThR" secondAttribute="bottom" constant="8" symbolic="YES" id="WMj-8t-cZh"/>
@@ -230,7 +239,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rka-nx-CSU">
-                                <rect key="frame" x="37" y="83" width="300" height="500"/>
+                                <rect key="frame" x="37" y="89" width="300" height="500"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2R-d2-10t">
                                         <rect key="frame" x="0.0" y="-2" width="100" height="50"/>
@@ -533,7 +542,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-iy-jTs">
-                                        <rect key="frame" x="0.0" y="200.5" width="300" height="100"/>
+                                        <rect key="frame" x="0.0" y="200" width="300" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="JQM-hr-M2F"/>
                                             <constraint firstAttribute="height" constant="100" id="n6l-iM-aSH"/>
@@ -611,7 +620,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwY-Nj-92E">
-                                <rect key="frame" x="161" y="604" width="52" height="38"/>
+                                <rect key="frame" x="161" y="597" width="52" height="38"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -624,14 +633,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="qua-Rz-VLV" firstAttribute="bottom" secondItem="xwY-Nj-92E" secondAttribute="bottom" constant="25" id="3ta-er-lBd"/>
-                            <constraint firstItem="xwY-Nj-92E" firstAttribute="centerX" secondItem="R0k-JV-FTX" secondAttribute="centerX" id="T49-Ij-4Kv"/>
+                            <constraint firstItem="qua-Rz-VLV" firstAttribute="bottom" secondItem="xwY-Nj-92E" secondAttribute="bottom" constant="32" id="670-2d-Tpb"/>
+                            <constraint firstItem="fqR-th-m2W" firstAttribute="leading" secondItem="qua-Rz-VLV" secondAttribute="leading" id="G9g-M5-f9Y"/>
+                            <constraint firstItem="fqR-th-m2W" firstAttribute="trailing" secondItem="qua-Rz-VLV" secondAttribute="trailing" id="VdG-0k-QZW"/>
+                            <constraint firstItem="xwY-Nj-92E" firstAttribute="centerX" secondItem="R0k-JV-FTX" secondAttribute="centerX" constant="-0.5" id="arw-ci-ZxF"/>
                             <constraint firstItem="fqR-th-m2W" firstAttribute="leading" secondItem="R0k-JV-FTX" secondAttribute="leading" id="bQG-Ys-Heg"/>
+                            <constraint firstItem="rka-nx-CSU" firstAttribute="top" secondItem="qua-Rz-VLV" secondAttribute="top" constant="25" id="fHW-Hv-wwc"/>
                             <constraint firstItem="fqR-th-m2W" firstAttribute="top" secondItem="R0k-JV-FTX" secondAttribute="top" constant="64" id="gkc-nr-CNJ"/>
-                            <constraint firstItem="fqR-th-m2W" firstAttribute="trailing" secondItem="qua-Rz-VLV" secondAttribute="trailing" id="hX3-N4-COP"/>
+                            <constraint firstItem="xwY-Nj-92E" firstAttribute="top" secondItem="rka-nx-CSU" secondAttribute="bottom" constant="8" symbolic="YES" id="lgT-aF-ehf"/>
                             <constraint firstItem="rka-nx-CSU" firstAttribute="centerX" secondItem="R0k-JV-FTX" secondAttribute="centerX" id="msc-yy-4rV"/>
                             <constraint firstItem="rka-nx-CSU" firstAttribute="centerY" secondItem="R0k-JV-FTX" secondAttribute="centerY" id="oxZ-yP-gaM"/>
-                            <constraint firstItem="qua-Rz-VLV" firstAttribute="bottom" secondItem="fqR-th-m2W" secondAttribute="bottom" id="qtR-6W-NO4"/>
+                            <constraint firstItem="fqR-th-m2W" firstAttribute="bottom" secondItem="qua-Rz-VLV" secondAttribute="bottom" id="wWd-ay-GQx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qua-Rz-VLV"/>
                         <connections>
